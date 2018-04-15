@@ -22,5 +22,13 @@ class MainActivity : AppCompatActivity() {
         val countUpTextView2 = findViewById<CountUpTextView>(R.id.count_up_text_view2)
         countUpTextView2.setData(Long.MAX_VALUE, "$%,d")
         countUpTextView2.startAnimation()
+
+        val slideUpTextView1 = findViewById<SlideUpTextView>(R.id.slide_up_text_view1)
+        slideUpTextView1.setData(Long.MAX_VALUE)
+        slideUpTextView1.startAnimation()
+
+        val slideUpTextView2 = findViewById<SlideUpTextView>(R.id.slide_up_text_view2)
+        slideUpTextView2.setData(Long.MAX_VALUE, "$%,d")
+        slideUpTextView2.startAnimation()
     }
 }

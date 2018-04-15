@@ -30,10 +30,31 @@
         app:autoSizeMaxTextSize="48sp"
         app:autoSizeMinTextSize="10sp"
         app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/slide_up_text_view1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/count_up_text_view1" />
+
+    <xyz.mayahiro.numberanimation.SlideUpTextView
+        android:id="@+id/slide_up_text_view1"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@id/slide_up_text_view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/count_up_text_view2" />
+
+    <xyz.mayahiro.numberanimation.SlideUpTextView
+        android:id="@+id/slide_up_text_view2"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/slide_up_text_view1"
+        app:phaseDuration="100" />
 
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/start_button"
